@@ -1,0 +1,176 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login Page</title>
+  <link rel="stylesheet" href="madan.css">
+  
+  <style>
+.body2
+{
+  background-color: #065d97;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height:97vh;
+  transition: background-color 0.3s ease;
+}
+.image
+{
+  width:200px;
+  height:200px;
+  border-radius:50%;
+}
+.image:hover
+{
+  cursor:pointer;
+  box-shadow: 20px 20px 100px;
+  background-color: #2980b9;
+  transition: .1s;
+}
+
+.container
+{
+  width:500px;
+  height:500px;
+  border-radius:3%;
+  background-color:rgb(158, 75, 193);
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+.container:hover
+{
+  box-shadow:20px 20px 100px;
+  background-color:rgb(104, 145, 104);
+}
+.user
+{
+  margin-top:20px;
+  margin-bottom:20px;
+  margin-left:-70px;
+  border-radius:2px;
+}
+.gmail
+{
+  margin-top:20px;
+  margin-bottom:20px;
+  margin-left:10px;
+  border-radius:2px;
+  margin-left:80px;
+}
+.password
+{
+  margin-left:-70px;
+}
+.register
+{
+  margin-top:20px;
+  cursor:pointer;
+  margin-bottom:20px;
+  margin-left:-20px;
+}
+.login
+{
+  margin-left:-20px;
+  cursor:pointer;
+  
+}
+.user-placeholder
+{
+  width:150px;
+  height:25px;
+  border-radius:5px;
+  border:solid;
+  border-width:0.1px;
+}
+.password-placeholder
+{
+  width:150px;
+  height:25px;
+  border-radius:5px;
+  border:solid;
+  border-width:0.1px;
+}
+.gmail-placeholder
+{
+  width:150px;
+  height:25px;
+  border-radius:5px;
+  border:solid;
+  border-width:0.1px;
+}
+.register-button
+{
+  margin-left:20px;
+  cursor:pointer;
+  border-radius:5px;
+  border-width:.1px;
+  height:25px;
+  width:150px;
+  color:white;
+  background-color:rgb(48, 129, 48);
+}
+.login-button
+{
+  border-width:.1px;
+  height:25px;
+  border-radius:5px;
+  margin-left:20px;
+  cursor:pointer;
+  width:150px;
+  color:white;
+  background-color:blue;
+}
+.user-word
+{
+  color:rgba(228, 242, 255, 0.73)
+}
+.password-word
+{
+  color:rgba(228, 242, 255, 0.73)
+}
+.gmail-word
+{
+  margin-left:-135px;
+  color:rgba(228, 242, 255, 0.73)
+}
+  </style>
+</head>
+
+<body class="body2">
+
+  <div class="container">
+            <div><img class="image" src="vani_web_page_image.jpg"></div>
+
+            <div class="gmail">
+                <label class="gmail-word" for="username" type="text">G-mail :</label>
+                <input class="gmail-placeholder" type="text" placeholder="       Enter G-mail" id="gmail">
+            </div>
+
+
+            <div class="user">
+                <label class="user-word" for="username" type="text">Username :</label>
+                <input class="user-placeholder" type="text" id="username" placeholder="      Enter Username" onclick="user()">
+            </div>
+
+             <div class="password">
+                <label class="password-word" for="password">Password :</label>
+                <input class="password-placeholder" type="text" id="password" placeholder="       Enter Password">
+            </div>
+
+             <div class="register">
+                <button class="register-button" type="button" onclick="registerUser()" id="register">Register User</button>
+            </div>
+
+             <div class="login">
+                <button class="login-button"  onclick="login()" id="login">Login</button>
+            </div>
+    </div>
+    <script src="vani.js"></script>
+</body>
+</html>
